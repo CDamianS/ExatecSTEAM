@@ -1,0 +1,150 @@
+#+title: Styles
+#+author: Damian Suarez
+#+property: header-args :tangle styles.css
+
+* Table of contents :toc:
+- [[#estilos-base][Estilos base]]
+  - [[#navbar][Navbar]]
+  - [[#footer][Footer]]
+- [[#homepage][Homepage]]
+  - [[#hero][Hero]]
+  - [[#imagen-steam][Imagen STEAM]]
+  - [[#secciones][Secciones]]
+  - [[#noticias][Noticias]]
+  - [[#contacto][Contacto]]
+
+* Estilos base
+#+begin_src css
+ * {
+    box-sizing: border-box;
+    font-family: 'raleway', sans-serif;
+}
+#+end_src
+
+** Navbar
+#+begin_src css
+.custom-navbar {
+  background-color: #0251CC;
+  height: 80px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  white-space: normal;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1.5;
+  display: flex;
+  vertical-align: middle;
+}
+#+end_src
+
+** Footer
+#+begin_src css
+.footer {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: otro-color;
+}
+#+end_src
+
+* Homepage
+** Hero
+La imagen y el texto
+#+begin_src css
+.hero-steam {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+}
+#+end_src
+*** Imagen
+#+begin_src css
+.hero img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#+end_src
+
+*** Texto
+#+begin_src css
+.hero-steam-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hero-steam-text p {
+    padding: 0px;
+}
+
+/* Estilo para el título */
+.hero-steam-title {
+    font-size: 48px;
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para el párrafo de texto */
+.hero-steam-description {
+    font-size: 24px;
+    font-weight: bold; /* Texto en negrita */
+    color: #C1C1C1;
+}
+
+#+end_src
+** Imagen STEAM
+TODO: area??
+#+begin_src css
+.steam-image {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.steam-image img {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+}
+#+end_src
+
+** Secciones
+#+begin_src css
+
+#+end_src
+
+** Noticias
+#+begin_src css
+
+#+end_src
+
+** Contacto
+#+begin_src css
+
+#+end_src
