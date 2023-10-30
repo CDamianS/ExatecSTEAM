@@ -29,6 +29,6 @@ urlpatterns = [
     path("technology/", views.technology, name="technology"),
     path("engineering/", views.engineering, name="engineering"),
     path("arts/", views.arts, name="arts"),
-    path("mathematics/", views.mathematics, name="mathematics"),
+    path("math/", views.math, name="math"),
     path("admin/", admin.site.urls),
 ]
