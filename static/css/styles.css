@@ -1,6 +1,6 @@
  * {
     box-sizing: border-box;
-    font-family: 'raleway', sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 
 .custom-navbar {
@@ -96,8 +96,100 @@
     margin: 0 auto;
 }
 
+.secciones {
+    max-width: 1100px;
+}
 
+.secciones h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
 
+.custom-card {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
 
+.custom-card .card-img-top {
+    border-radius: 20px;
+    height: 250px;
+}
 
+.custom-card .card-title {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
 
+.custom-card .card-text {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #888888;
+    font-size: 18px;
+}
+
+.noticias {
+   margin-bottom: 50px
+}
+
+.noticias h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.contacto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    max-width: 700px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.contacto h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.custom-btn {
+    width: 100%;
+    height: 25%;
+    background-color: black;
+    color: white;
+}
+
+.custom-input {
+    border-radius: 15px;
+}
+
+.form-control {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.form-control::placeholder {
+    color: #B3B3B3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.custom-btn {
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    padding: 20px;
+}
