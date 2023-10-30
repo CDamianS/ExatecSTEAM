@@ -29,7 +29,10 @@ def contacto(request):
 
 # Paginas STEAM
 def science(request):
-    return HttpResponse("Hello, world. You're at science")
+    context = {"seccion": "Science",
+               "description": "Aprende sobre la ciencia y cómo la ciencia es vital para las carreras STEAM",
+               "imagen": "img/science.jpg"}
+    return render(request, "science.html", context)
 
 def technology(request):
     return HttpResponse("Hello, world. You're at technology")
@@ -40,5 +43,5 @@ def engineering(request):
 def arts(request):
     return HttpResponse("Hello, world. You're at arts")
 
-def mathematics(request):
-    return HttpResponse("Hello, world. You're at mathematics")
+def math(request):
+    return HttpResponse("Hello, world. You're at math")

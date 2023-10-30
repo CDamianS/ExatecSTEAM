@@ -23,34 +23,42 @@
 <h1>Explora STEAM</h1>
 <div class="card-deck">
   <div class="card border-0 custom-card">
-    <img class="card-img-top" src="{% static 'img/homepage.jpg' %}" alt="Card image cap">
+    <a href="{% url 'science' %}">
+    <img class="card-img-top" src="{% static 'img/science.jpg' %}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Science</h5>
       <p class="card-text">La "S" en STEAM destaca la necesidad de comprender la ciencia de manera profunda y contextual, permitiendo a los estudiantes y profesionales combinar conocimientos científicos con creatividad para abordar los desafíos del mundo actual y futuro.</p>
     </div>
+    </a>
   </div>
   <div class="card border-0 custom-card">
-    <img class="card-img-top" src="{% static 'img/homepage.jpg' %}" alt="Card image cap">
+    <a href="{% url 'technology' %}">
+    <img class="card-img-top" src="{% static 'img/tech.jpg' %}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Technology</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text">En el contexto de las carreras STEAM, la "T" abarca campos como la informática, la ingeniería informática, la robótica, la inteligencia artificial, la ciberseguridad, la electrónica y muchas otras áreas relacionadas con la tecnología.</p>
     </div>
+    </a>
   </div>
 </div>
 <div class="card-deck">
   <div class="card border-0 custom-card">
-    <img class="card-img-top" src="{% static 'img/homepage.jpg' %}" alt="Card image cap">
+    <a href="{% url 'engineering' %}">
+    <img class="card-img-top" src="{% static 'img/engineering.jpg' %}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Engineering</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text">En el contexto de las carreras STEAM, la "E" es esencial porque la ingeniería a menudo se entrelaza con la ciencia, la tecnología y las matemáticas para crear soluciones innovadoras.</p>
     </div>
+    </a>
   </div>
   <div class="card border-0 custom-card">
-    <img class="card-img-top" src="{% static 'img/homepage.jpg' %}" alt="Card image cap">
+    <a href="{% url 'math' %}">
+    <img class="card-img-top" src="{% static 'img/math.jpg' %}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Math</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text">La "M" en STEAM enfatiza la importancia de las matemáticas como una base sólida para el pensamiento crítico y la resolución de problemas en todas las disciplinas STEAM</p>
     </div>
+    </a>
   </div>
 </div>
 </div>
@@ -101,9 +109,9 @@
       </div>
   </div>
   <div class="form-group">
-      <textarea required id="mensaje" name="mensaje" class="form-control rounded-md border-0 custom-input" placeholder="Mensaje" rows="5"></textarea>
+      <textarea required id="mensaje" name="mensaje" class="form-control rounded-md border-0 custom-input" placeholder="Mensaje" rows="3"></textarea>
   </div>
-  <button type="button" class="btn btn-dark custom-btn rounded-md">Enviar</button>
+  <button type="button" class="btn btn-dark custom-btn rounded-lg">Enviar</button>
   </form>
 </div>
 {% endblock %}
