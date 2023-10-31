@@ -125,12 +125,20 @@
     font-size: 24px;
 }
 
+.custom-card .title-section {
+    color: black;
+}
+
 .custom-card .card-text {
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #888888;
     font-size: 18px;
+}
+
+.custom-card .text-section {
+    color: white;
 }
 
 .noticias {
@@ -192,4 +200,18 @@
     margin-bottom: 50px;
     margin-top: 40px;
     padding: 10px;
+}
+
+.section-content {
+    padding: 2rem 0;
+    overflow: hidden;
+}
+
+.fit-image {
+    object-fit: cover;
+    height: 20rem !important;
+}
+
+.no-bg-color {
+    background-color: transparent;
 }

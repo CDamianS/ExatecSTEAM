@@ -26,12 +26,62 @@ def noticias(request):
 def contacto(request):
     return render(request, "contacto.html")
 
-
+science_cards = [
+    {
+        "title": "Áreas de oportunidad",
+        "description": "Explora campos emergentes como la nanotecnología y sus aplicaciones.",
+        "image": "img/science/áreas_de_oportunidad.jpg",
+        "col": 4
+    },
+    {
+        "title": "¿Cómo el arte soporta mi creatividad científica?",
+        "description": "Descubre cómo el arte puede simplificar conceptos científicos y hacer que la ciencia sea más accesible.",
+        "image": "img/science/como_el_arte_soporta_mi_creatividad_científica.jpeg",
+        "col": 8
+    },
+    {
+        "title": "¿Dónde puedo estudiar? Becas, Historias, Efemerides",
+        "description": "Encuentra universidades destacadas en STEAM y conoce oportunidades de becas. Explora eventos históricos y efemérides científicas.",
+        "image": "img/science/donde_puedo_estudiar.webp",
+        "col": 8
+    },
+    {
+        "title": "Infografía",
+        "description": "Visualiza datos sobre la brecha de género en STEAM y la importancia de la diversidad de género.",
+        "image": "img/science/infografia.webp",
+        "col": 4
+    },
+    {
+        "title": "¿Qué necesito para…?",
+        "description": "Aprende qué se necesita para una carrera específica, como convertirte en astrónomo.",
+        "image": "img/science/que_necesito_para.webp",
+        "col": 4
+    },
+    {
+        "title": "Héroes Reales: Historias Actuales",
+        "description": "Conoce a científicos destacados, como la primatóloga Jane Goodall y la ingeniera química Frances Arnold.",
+        "image": "img/science/heroes_reales.webp",
+        "col": 8
+    },
+    {
+        "title": "La mujer y la ingeniería",
+        "description": "Descubre el impacto de las mujeres en STEAM y sus contribuciones, como el trabajo de Frances Arnold.",
+        "image": "img/science/la_mujer_y_la_ingenieria.jpeg",
+        "col": 8
+    },
+    {
+        "title": "Bolsa de trabajo",
+        "description": "Explora ofertas de empleo en STEAM, como posiciones en inteligencia artificial.",
+        "image": "img/science/bolsa_de_trabajo.webp",
+        "col": 4
+    }
+]
 # Paginas STEAM
 def science(request):
     context = {"seccion": "Science",
-               "description": "Aprende sobre la ciencia y cómo la ciencia es vital para las carreras STEAM",
-               "imagen": "img/science.jpg"}
+               "section_color": "#5371ff",
+               "science_cards": science_cards,
+               "impar": False}
     return render(request, "science.html", context)
 
 def technology(request):
