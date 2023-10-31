@@ -12,4 +12,30 @@
         </div>
     </div>
 </div>
+<div class="section-content" style="background-color: {{section_color}};">
+  {% for science_card in science_cards %}
+  {% if not forloop.counter|divisibleby:2 %}
+  <div class="row">
+  {% endif %}
+    <div class="col-sm-12 col-md-{{ science_card.col }}">
+      <div class="card-deck">
+        <div class="card border-0 custom-card no-bg-color">
+          <a href="#">
+            <img class="card-img-top fit-image" src="{% static science_card.image %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title title-section">{{ science_card.title }}</h5>
+              <p class="card-text text-section">{{ science_card.description }}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  {% if forloop.counter|divisibleby:2 %}
+  </div>
+  {% endif %}
+  {% endfor %}
+  {% if impar %}
+  </div>
+  {% endif %}
+</div>
 {% endblock %}
