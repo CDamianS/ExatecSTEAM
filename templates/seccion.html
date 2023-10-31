@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="hero-steam">
+<img src="{% static science %}" alt="Imagen de {{ seccion }}" />
+    <div class="hero-steam-text">
+        <div class="hero-steam-title">
+            <p>{{ seccion }}</p>
+        </div>
+        <div class="hero-steam-description">
+            <p>{{ description }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
