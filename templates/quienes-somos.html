@@ -1,2 +1,61 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-12 col-md-6 center-items">
+        <h2 class="common-title center-text less-padding">¿Quiénes somos?</h2>
+        <p class="common-subtitle grey-text center-text less-padding">Exatec STEAM es una organanización apasionada por difundir las carreras
+            STEAM a los jóvenes y niños</h3>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <img class="fit-side-image" src="{% static 'img/quienes_somos/meeting.webp' %}" alt="¿Quiénes somos? image">
+    </div>
+</div>
+<div class="row dark-blue some-padding">
+    <div class="col-sm-12 col-md-6 less-padding">
+        <img class="fit-side-image rounded" src="{% static 'img/quienes_somos/teus.webp' %}" alt="Teus con birrete saludando">
+    </div>
+    <div class="col-sm-12 col-md-6 center-items less-padding">
+        <h2 class="common-title center-text">Nuestra Historia de Origen: Desde humildes comienzos</h2>
+        <p class="common-subtitle grey-text center-text">Exatec Steam comenzó como una iniciativa popular de un grupo de ex
+            alumnos apasionados, decididos a brindar oportunidades educativas a la próxima generación de líderes.</h3>
+    </div>
+    <div class="col-sm-12 col-md-6 center-items less-padding">
+        <h2 class="common-title center-text">¡Estamos buscando lo mejor y más brillante!</h2>
+        <p class="common-subtitle grey-text center-text">¿Eres un alma creativa con talento que pica por más conocimiento? Exatec
+            Steam está buscando mentes brillantes para unirse a nosotros.</h3>
+    </div>
+    <div class="col-sm-12 col-md-6 less-padding">
+        <img class="fit-side-image rounded" src="{% static 'img/quienes_somos/planning.jpg' %}"
+            alt="Teus con birrete saludando">
+    </div>
+</div>
+<div class="row some-padding">
+    <h2 class="col-sm-12 common-title dark-blue-text less-padding">Nuestros Principios</h1>
+    <div class="col-sm-12 col-md-6 less-padding">
+        <span class="common-subtitle dark-blue-text">Visión Inspiradora</span>
+        <p>Imaginamos un mundo en el que cada estudiante tenga acceso a una educación de calidad.</p>
+    </div>
+    <div class="col-sm-12 col-md-6 less-padding">
+        <span class="common-subtitle dark-blue-text">Misión imparable</span>
+        <p>Empoderar a los estudiantes mediante la innovación, la creatividad y la colaboración.</p>
+    </div>
+    <div class="col-sm-12 col-md-6 less-padding">
+        <span class="common-subtitle dark-blue-text">Alianzas sólidas</span>
+        <p>Nos asociamos con las mejores empresas para apoyar a nuestros miembros.</p>
+    </div>
+    <div class="col-sm-12 col-md-6 less-padding">
+        <span class="common-subtitle dark-blue-text">Impacto duradero</span>
+        <p>Nuestros programas cambian vidas para las generaciones venideras.</p>
+    </div>
+    <div class="col-sm-12 col-md-6 less-padding">
+        <span class="common-subtitle dark-blue-text">Crecimiento continuo</span>
+        <p>Nos esforzamos por mejorar y adaptarnos a los retos futuros.</p>
+    </div>
+    <div class="col-sm-12 col-md-6 less-padding">
+        <span class="common-subtitle dark-blue-text">Potencial ilimitado</span>
+        <p>Transformar el talento en bruto en líderes que cambian el mundo.</p>
+    </div>
+</div>
+{% endblock content %}
